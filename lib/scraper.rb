@@ -26,6 +26,6 @@ class Scraper
   end
 
   def make_courses(title, schedule, description)
-    
+
   end
 end
