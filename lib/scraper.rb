@@ -31,5 +31,6 @@ class Scraper
       course.title = postholder.css("h2").text
       course.schedule = postholder.css("date").text
       course.description = postholder.css("p").text
+    end
   end
 end
