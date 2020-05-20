@@ -26,6 +26,8 @@ class Scraper
   end
 
   def make_courses
+    page = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    courses = page.css(".posts-holder")
     courses.each do |course|
       puts course.text.strip
     end
