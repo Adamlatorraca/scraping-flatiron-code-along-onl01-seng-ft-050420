@@ -26,7 +26,7 @@ class Scraper
   end
 
   def make_courses
-    @courses.each do |course|
+    @courses.select do |course|
       Course.new(title, schedule, description)
     end
   end
