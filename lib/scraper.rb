@@ -17,12 +17,12 @@ class Scraper
   end
 
   def get_page
-    page = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    @page = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
   end
 
   def get_courses
-    page = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
-    courses = page.css(".posts-holder")
+    @page = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    @courses = page.css(".posts-holder")
   end
 
   def make_courses
