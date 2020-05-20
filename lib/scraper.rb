@@ -21,6 +21,6 @@ class Scraper
   end
 
   def get_courses
-    css("posts-holder")
+    self.css("posts-holder")
   end
 end
