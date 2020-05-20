@@ -25,8 +25,8 @@ class Scraper
     @courses = @page.css(".posts-holder")
   end
 
-  def make_courses(title, schedule, description)
-    @courses.select do |course|
+  def make_courses
+    courses.select do |course|
       Course.new(title, schedule, description)
     end
   end
