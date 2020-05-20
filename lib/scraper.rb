@@ -26,8 +26,6 @@ class Scraper
   end
 
   def make_courses
-    courses.select do |course|
-      Course.new(title, schedule, description)
-    end
+
   end
 end
