@@ -28,5 +28,6 @@ class Scraper
   def make_courses
     courses.each do |course|
       puts course.text.strip
+    end
   end
 end
